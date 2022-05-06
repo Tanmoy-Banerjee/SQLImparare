@@ -15,3 +15,11 @@ The SELECT DISTINCT statement is used to return only distinct (different) values
 Syntax:
 SELECT DISTINCT column1, column2, ...
 FROM table_name;
+
+
+Demo Database : Refer to https://www.w3schools.com/sql/sql_distinct.asp 
+
+The following SQL statement lists the number of different (distinct) customer countries:
+SELECT COUNT(DISTINCT Country) FROM Customers;
+
+
