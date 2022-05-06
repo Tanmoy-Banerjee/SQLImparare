@@ -1,0 +1,33 @@
+WHERE CLAUSE 
+The WHERE clause is used to filter records which fulfill a specific condition.
+
+Syntax:
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+Demo Database: Refer https://www.w3schools.com/sql/sql_where.asp 
+
+The following SQL statement selects all the customers from the country "Mexico", in the "Customers" table:
+
+SELECT * FROM Customers
+WHERE Country='Mexico';
+
+Text Fields vs. Numeric Fields  
+-----------------------------------
+
+SQL requires single quotes around text values however numeric fields should not be enclosed in quotes.
+Example - SELECT * FROM Customers WHERE CustomerID=1;
+
+Operators in WHERE clause :
+----------------------------------------------
+Operator	                     Description	
+=	                              Equal	
+>	                              Greater than	
+<	                              Less than	
+>=                                Greater than or equal	
+<=	                              Less than or equal	
+<>	                              Not equal. Note: In some versions of SQL this operator may be written as !=	
+BETWEEN	                          Between a certain range	
+LIKE	                          Search for a pattern	
+IN	                              To specify multiple possible values for a column    
